@@ -203,7 +203,7 @@ Module.expectedDataFileDownloads++;
     }
     var PACKAGE_NAME = 'block3.data';
     var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'block3.data';
-    var REMOTE_PACKAGE_SIZE = 2472;
+    var REMOTE_PACKAGE_SIZE = 1924;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -312,7 +312,7 @@ function assert(check, msg) {
         ENV.HSP_LIMIT_STEP = "5000";//ブラウザに処理を返すまでの実行ステップ数
     });
 
-      new DataRequest(0, 2472, 0, 0).open('GET', '/block3.ax');
+      new DataRequest(0, 1924, 0, 0).open('GET', '/block3.ax');
 
 
     function processPackageData(arrayBuffer) {
