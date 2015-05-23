@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>4cnt01 - HSP3Dish</title>
+    <title>4cnt02 - HSP3Dish</title>
     <style>
       body {
         font-family: arial;
@@ -179,7 +179,7 @@
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
         },
-        arguments: ["4cnt01.ax"]
+        arguments: ["4cnt02.ax"]
       };
       Module.setStatus('Downloading...');
 
@@ -201,9 +201,9 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = '4cnt01.data';
-    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + '4cnt01.data';
-    var REMOTE_PACKAGE_SIZE = 221;
+    var PACKAGE_NAME = '4cnt02.data';
+    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + '4cnt02.data';
+    var REMOTE_PACKAGE_SIZE = 1380;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -312,7 +312,7 @@ function assert(check, msg) {
         ENV.HSP_LIMIT_STEP = "5000";//ブラウザに処理を返すまでの実行ステップ数
     });
 
-      new DataRequest(0, 221, 0, 0).open('GET', '/4cnt01.ax');
+      new DataRequest(0, 1380, 0, 0).open('GET', '/4cnt02.ax');
 
 
     function processPackageData(arrayBuffer) {
@@ -326,12 +326,12 @@ function assert(check, msg) {
       Module['HEAPU8'].set(byteArray, ptr);
       DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
 
-          DataRequest.prototype.requests["/4cnt01.ax"].onload();
+          DataRequest.prototype.requests["/4cnt02.ax"].onload();
 
-          Module['removeRunDependency']('datafile_4cnt01.data');
+          Module['removeRunDependency']('datafile_4cnt02.data');
 
     };
-    Module['addRunDependency']('datafile_4cnt01.data');
+    Module['addRunDependency']('datafile_4cnt02.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
