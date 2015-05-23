@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>4cnt03 - HSP3Dish</title>
+    <title>4cnt04 - HSP3Dish</title>
     <style>
       body {
         font-family: arial;
@@ -179,7 +179,7 @@
           this.totalDependencies = Math.max(this.totalDependencies, left);
           Module.setStatus(left ? 'Preparing... (' + (this.totalDependencies-left) + '/' + this.totalDependencies + ')' : 'All downloads complete.');
         },
-        arguments: ["4cnt03.ax"]
+        arguments: ["4cnt04.ax"]
       };
       Module.setStatus('Downloading...');
 
@@ -201,9 +201,9 @@ Module.expectedDataFileDownloads++;
       // worker
       PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
     }
-    var PACKAGE_NAME = '4cnt03.data';
-    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + '4cnt03.data';
-    var REMOTE_PACKAGE_SIZE = 1416;
+    var PACKAGE_NAME = '4cnt04.data';
+    var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + '4cnt04.data';
+    var REMOTE_PACKAGE_SIZE = 1417;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -312,7 +312,7 @@ function assert(check, msg) {
         ENV.HSP_LIMIT_STEP = "5000";//ブラウザに処理を返すまでの実行ステップ数
     });
 
-      new DataRequest(0, 1416, 0, 0).open('GET', '/4cnt03.ax');
+      new DataRequest(0, 1417, 0, 0).open('GET', '/4cnt04.ax');
 
 
     function processPackageData(arrayBuffer) {
@@ -326,12 +326,12 @@ function assert(check, msg) {
       Module['HEAPU8'].set(byteArray, ptr);
       DataRequest.prototype.byteArray = Module['HEAPU8'].subarray(ptr, ptr+byteArray.length);
 
-          DataRequest.prototype.requests["/4cnt03.ax"].onload();
+          DataRequest.prototype.requests["/4cnt04.ax"].onload();
 
-          Module['removeRunDependency']('datafile_4cnt03.data');
+          Module['removeRunDependency']('datafile_4cnt04.data');
 
     };
-    Module['addRunDependency']('datafile_4cnt03.data');
+    Module['addRunDependency']('datafile_4cnt04.data');
   
     if (!Module.preloadResults) Module.preloadResults = {};
   
