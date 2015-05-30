@@ -203,7 +203,7 @@ Module.expectedDataFileDownloads++;
     }
     var PACKAGE_NAME = 'tsum91.data';
     var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'tsum91.data';
-    var REMOTE_PACKAGE_SIZE = 1109518;
+    var REMOTE_PACKAGE_SIZE = 1144824;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -317,8 +317,9 @@ function assert(check, msg) {
       new DataRequest(37392, 57893, 0, 0).open('GET', '/gazo002.png');
       new DataRequest(57893, 77845, 0, 0).open('GET', '/gazo003.png');
       new DataRequest(77845, 99036, 0, 0).open('GET', '/gazo004.png');
-      new DataRequest(99036, 179932, 0, 0).open('GET', '/Thumbs.db');
-      new DataRequest(179932, 1109518, 0, 0).open('GET', '/tsumse.wav');
+      new DataRequest(99036, 116422, 0, 0).open('GET', '/keshikeshi.png');
+      new DataRequest(116422, 215238, 0, 0).open('GET', '/Thumbs.db');
+      new DataRequest(215238, 1144824, 0, 0).open('GET', '/tsumse.wav');
 
 
     function processPackageData(arrayBuffer) {
@@ -337,6 +338,7 @@ function assert(check, msg) {
           DataRequest.prototype.requests["/gazo002.png"].onload();
           DataRequest.prototype.requests["/gazo003.png"].onload();
           DataRequest.prototype.requests["/gazo004.png"].onload();
+          DataRequest.prototype.requests["/keshikeshi.png"].onload();
           DataRequest.prototype.requests["/Thumbs.db"].onload();
           DataRequest.prototype.requests["/tsumse.wav"].onload();
 
