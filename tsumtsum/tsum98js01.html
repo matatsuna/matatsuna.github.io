@@ -203,7 +203,7 @@ Module.expectedDataFileDownloads++;
     }
     var PACKAGE_NAME = 'tsum98js01.data';
     var REMOTE_PACKAGE_NAME = (Module['filePackagePrefixURL'] || '') + 'tsum98js01.data';
-    var REMOTE_PACKAGE_SIZE = 8965982;
+    var REMOTE_PACKAGE_SIZE = 4494314;
     var PACKAGE_UUID = '51f84d03-0c74-4552-ac13-924e79e76977';
   
     function fetchRemotePackage(packageName, packageSize, callback, errback) {
@@ -314,19 +314,17 @@ function assert(check, msg) {
 
       new DataRequest(0, 23239, 0, 0).open('GET', '/tsum98js01.ax');
       new DataRequest(23239, 3149616, 0, 0).open('GET', '/agent166.mp3');
-      new DataRequest(3149616, 7621091, 0, 0).open('GET', '/data.dpm');
-      new DataRequest(7621091, 7656538, 0, 0).open('GET', '/fan04.mp3');
-      new DataRequest(7656538, 7678605, 0, 0).open('GET', '/gazo001.png');
-      new DataRequest(7678605, 7699106, 0, 0).open('GET', '/gazo002.png');
-      new DataRequest(7699106, 7719058, 0, 0).open('GET', '/gazo003.png');
-      new DataRequest(7719058, 7740249, 0, 0).open('GET', '/gazo004.png');
-      new DataRequest(7740249, 7748472, 0, 0).open('GET', '/matamata.png');
-      new DataRequest(7748472, 7756275, 0, 0).open('GET', '/meiji01.png');
-      new DataRequest(7756275, 7756468, 0, 0).open('GET', '/packfile');
-      new DataRequest(7756468, 7858030, 0, 0).open('GET', '/retro.wav');
-      new DataRequest(7858030, 7918124, 0, 0).open('GET', '/system24.wav');
-      new DataRequest(7918124, 8036396, 0, 0).open('GET', '/Thumbs.db');
-      new DataRequest(8036396, 8965982, 0, 0).open('GET', '/tsumse.wav');
+      new DataRequest(3149616, 3185063, 0, 0).open('GET', '/fan04.mp3');
+      new DataRequest(3185063, 3207130, 0, 0).open('GET', '/gazo001.png');
+      new DataRequest(3207130, 3227631, 0, 0).open('GET', '/gazo002.png');
+      new DataRequest(3227631, 3247583, 0, 0).open('GET', '/gazo003.png');
+      new DataRequest(3247583, 3268774, 0, 0).open('GET', '/gazo004.png');
+      new DataRequest(3268774, 3276997, 0, 0).open('GET', '/matamata.png');
+      new DataRequest(3276997, 3284800, 0, 0).open('GET', '/meiji01.png');
+      new DataRequest(3284800, 3386362, 0, 0).open('GET', '/retro.wav');
+      new DataRequest(3386362, 3446456, 0, 0).open('GET', '/system24.wav');
+      new DataRequest(3446456, 3564728, 0, 0).open('GET', '/Thumbs.db');
+      new DataRequest(3564728, 4494314, 0, 0).open('GET', '/tsumse.wav');
 
 
     function processPackageData(arrayBuffer) {
@@ -342,7 +340,6 @@ function assert(check, msg) {
 
           DataRequest.prototype.requests["/tsum98js01.ax"].onload();
           DataRequest.prototype.requests["/agent166.mp3"].onload();
-          DataRequest.prototype.requests["/data.dpm"].onload();
           DataRequest.prototype.requests["/fan04.mp3"].onload();
           DataRequest.prototype.requests["/gazo001.png"].onload();
           DataRequest.prototype.requests["/gazo002.png"].onload();
@@ -350,7 +347,6 @@ function assert(check, msg) {
           DataRequest.prototype.requests["/gazo004.png"].onload();
           DataRequest.prototype.requests["/matamata.png"].onload();
           DataRequest.prototype.requests["/meiji01.png"].onload();
-          DataRequest.prototype.requests["/packfile"].onload();
           DataRequest.prototype.requests["/retro.wav"].onload();
           DataRequest.prototype.requests["/system24.wav"].onload();
           DataRequest.prototype.requests["/Thumbs.db"].onload();
