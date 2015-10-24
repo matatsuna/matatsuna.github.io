@@ -1,0 +1,270 @@
+﻿/*--------------------------------------------------------------
+Copyright WEB MAGIC.
+http://www.webamgic.jp/
+Template#13 type-3-menu5 ver 1.01
+---------------------------------------------------------------*/
+body {
+text-align: center;
+background-color:#ffffff;/*全体の背景色-----------------*/
+font-family: Osaka,Verdana,Arial,Helvetica,sans-serif;
+font-size:15px;/*基本の文字サイズ-----------------*/
+line-height:200%;
+color:#444444;;/*基本の文字色-----------------*/
+margin-top:0px;/*コンテンツボックスを上から少し離しています-----------------*/
+margin-bottom:20px;
+margin-left:0;
+margin-right:0;
+}
+h1,h2,h3 {
+margin:0px;
+padding:0px;
+font-weight:normal;
+}
+/*pタグ空白消去*/
+p {
+margin:0px;
+padding:0px;
+}
+/*IMGボーダー非表示*/
+img  {
+border: none;
+vertical-align:top;
+}
+/*TABLEボーダー非表示*/
+table  {
+border:none;
+margin: 0 auto;
+text-align: left;
+}
+/*IE--BRバグ回避*/
+br  {
+letter-spacing:normal;
+}
+/*ビルダー表示崩れ回避*/
+br.clear{
+clear:both;
+padding:0px;
+margin:0px;
+height:0px;
+line-height:0;
+}
+
+/*リスト空白消去*/
+ul,ol,li  {
+margin:0px;
+padding:0px;
+list-style:none;
+}
+
+/*ページのタイトル部分のみのテキストリンク-----------------*/
+h1 a:link       {color:#ffffff;text-decoration:none;} /*メニュー・テキストリンクの色*/
+h1 a:visited    {color:#ffffff;text-decoration:none;} /*メニュー・訪問済みのリンクの色*/
+h1 a:active     {color:#ffffff;text-decoration:underline;} /*メニュー・クリック時のリンクの色*/
+h1 a:hover      {color:#ffffff;text-decoration:underline;} /*メニュー・マウス上にカーソルがある時のリンク色*/
+
+/*普通のテキストリンク-----------------*/
+a:link    {text-decoration:underline;color:#217E00;}  /*テキストリンクの色*/
+a:visited {text-decoration:underline;color:#217E00;}  /*訪問済みのリンクの色*/
+a:active  {text-decoration:underline;color:#217E00;}   /*クリック時のリンクの色*/
+a:hover   {text-decoration:underline;color:#217E00;}  /*マウスの上にカーソルがあるときのリンクの色*/
+
+/*サイトのタイトル文字-----------------*/
+h1{
+line-height:normal;
+font-size:30px;/*タイトル文字サイズ*/
+font-family: Osaka,Verdana,Arial,Helvetica,sans-serif;
+font-weight:bold ;
+margin:0;
+padding:4px 0px 15px 0px;
+}
+/*ヘッダー下ロールオーバーメニューリスト指定------------------------------------------------*/
+
+#menu{
+height: 100px;
+margin: 0;
+padding: 0;
+top: 0;
+left: 0;
+line-height:400%;
+}
+#menu ul{
+list-style-type: none;
+}
+/*各メニューのボックス-----------------*/
+#menu li{
+float: left;
+width: 19.8%;
+text-align: center;
+border-top:1px #222222 solid;
+border-left:1px #222222 solid;
+border-bottom:1px #222222 solid;
+}
+/*マウスをのせていないときの指定-----------------*/
+#menu a{
+display:block;
+padding:0px;
+width: 100%;
+background-color:#217503;/*------メニューの背景色-----------*/
+color:#ffffff;/*------メニューの文字色-----------------*/
+text-decoration:none;/*------リンクのアンダーラインなし-----------------*/
+text-align: center;
+font-size:14px;/*------文字サイズ-----------------*/
+}
+
+/*マウスをのせたときの指定-----------------*/
+#menu a:hover{
+background-color:#3F8E23;/*-------メニューの背景色----------*/
+color:#ffffff;/*-------メニューの文字色-----------*/
+text-decoration:none;/*-------リンクのアンダーラインあり----------*/
+font-size:14px;/*------文字サイズ-----------------*/
+}
+
+#wrapper{
+width:100%;
+height: auto;
+clear:both;
+background-color:#FFFFFF; /*----メニューから下の部分のコンテンツ背景色--------*/
+position:relative;
+}
+
+#cse-search-box {
+  padding-top:100px;
+  margin: 0 auto;
+  position:static;
+    width: 750px;
+    height: 350px;
+}
+#cse-search-box div{
+  padding: 0;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: solid 2px #222222;
+}
+#cse-search-box input[type="text"] {
+  border: 1px solid #dddddd !important;
+  width: 600px;
+  font-size: 20px;
+  height: 30px !important;;
+  padding: 0;
+  margin: 3px 0 0 5px;
+}
+#cse-search-box input[type="text"]:focus {
+  border: 1px solid #008ee1 !important;
+  outline: 0;  /*safariの自動フォーカスを切る */
+}
+#cse-search-box input[type="submit"] {
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: #111111;
+/*  border: none;*/
+  height: 50px;
+  margin: 0;
+  overflow: hidden;
+  width: 100px;
+/*  position: relative;*/
+  background-color: #ffffff;
+}
+#cse-search-box input[type="submit"]:hover {
+  cursor: pointer;
+}
+#cse-search-box input[type="text"]:focus {
+  outline: 0;
+}
+#main{
+float:none;
+padding-top:30px;
+width:100%;
+height: auto;
+text-align: center;
+}
+ /*----NEWS・下層ページタイトル--------*/
+h2 {
+font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3";
+background-image:url(images/bar.gif);
+background-repeat:no-repeat;
+margin-bottom:18px;
+height:41px;
+font-weight:normal;
+font-size:17px; /*----文字サイズ--------*/
+}
+
+
+
+/*----NEWS・下層ページタイトル左の方にある色のついた縦ライン--------*/
+.line{
+border-left:#217503 4px solid; /*----ラインの色・太さ・ラインは直線--------*/
+padding:10px;
+height:21px;
+}
+
+
+
+
+
+#down{
+  margin: 0 auto;
+padding-top:33px;
+padding-right:25px;
+width:70%;
+}
+
+#textlink{
+border-top:#dddddd solid 1px;
+margin-left:30px;
+margin-right:30px;
+padding:12px 4px 25px 4px;
+text-align:left;
+}
+
+
+/*----下層ページ小見出し--------*/
+h3{
+font-weight:bold;
+padding:2px;
+font-size:28px;
+color:#217503;
+margin-bottom:10px;
+border-bottom:#dddddd double 3px;/*----下部ライン--------*/
+}
+
+
+/*----テーブル表組み左のセル--------*/
+.table_item{
+background-color:#f3f3f3;/*----セルの色--------*/
+text-align:left;
+}
+
+
+/*----テーブル表組み右のセル--------*/
+.table_text{
+background-color:#ffffff;/*----セルの色--------*/
+text-align:left;
+}
+
+
+/*----テーブル表組みの枠線--------*/
+.waku{
+background-color:#999999;/*---枠線の色--------*/
+}
+
+
+#copyright{
+clear:both;
+margin:0 auto;
+padding:4px 2px;
+width:892px;
+font-size:10px;
+text-align:right;
+
+}
+
+#copyright a:link {color:#444444;}
+#copyright a:visited  {color:#444444;}
+#copyright a:hover {color:#444444;}
+#copyright a:active  {color:#444444;}
+
+
+
+.space20{
+margin-bottom:20px;
+}
