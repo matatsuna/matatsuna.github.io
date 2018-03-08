@@ -1,6 +1,0 @@
-gems:
-  - jekyll-redirect-from
-
-title: "matatsuna Github"
-redirect_to:
-  - https://github.com/matatsuna
